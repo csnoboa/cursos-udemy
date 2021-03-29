@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+    </head>
+
+    <body>
+        <ol>
+            <li>Primeiro elemento</li>
+            <li>Segundo elemento</li>
+            <li>Terceiro elemento</li>
+        </ol>
+            <hr>
+        <ul>
+            <li><a href="https://google.com.br">Primeiro elemento</a></li>
+            <li>Segundo elemento</li>
+            <li>Terceiro elemento</li>
+        </ul>
+        <form action="processa.php" method="post">
+            <label>Text</label>
+            <input type="text" name="texto1" placeholder="Login">
+            <br>
+            <label>Senha</label>
+            <input type="password" name="senha" placeholder="Senha">
+            <br>
+            <label>Oculto</label>
+            <input type="hidden" name="informacao_oculta" value="mensagem oculta">
+            <br>
+
+            <select name="selacao">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+            </select>
+
+            <br>
+
+            <label>Radio</label>
+            <input type="radio" name="radio1" value="1">Valor 1
+            <input type="radio" name="radio1" value="2">Valor 2
+            <br>
+            <input type="checkbox" name="ck1" value="1">Valor 1
+            <input type="checkbox" name="ck1" value="2">Valor 2
+            <input type="checkbox" name="ck1" value="3">Valor 3
+
+            <br>
+
+            <input type="submit" value="Enviar" name="submit">
+
+
+
+            <br>
+        </form>
+    </body>
+    
+</html>
