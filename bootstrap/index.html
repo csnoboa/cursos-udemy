@@ -2,10 +2,10 @@
 
 <html>
 
-    <meta charset="utf-8">
+    
     <head>
         <title>Meu primeiro site com Bootstrap</title>
-
+        <meta charset="utf-8">
         <!-- CSS -->
         <link href="public/css/bootstrap.min.css" rel="stylesheet">
         
@@ -14,19 +14,31 @@
     <body>
 
         <div class="container">
-            <h1>Popovers</h1>
-            <button type="button" data-toggle="popover" title="Popover title" data-content="conteudo">Click to toggle popover</button>
+            <h1>Tooltips</h1>
+            <!-- topo -->
+            <button class="btn btn-success" data-toggle="tooltip" title="Meu primeiro tooltip" data-placement="top">Topo</button>
+            
+            <!-- direita -->
+            <button class="btn btn-success" data-placement="right" data-toggle="tooltip" title="Meu primeiro tooltip">Direita</button>
+            
+            <!-- esquerda -->
+            <button class="btn btn-success" data-toggle="tooltip" data-placement="left" title="Meu primeiro tooltip">Esquerda</button>
+            
+            <!-- baixo -->
+            <button class="btn btn-success" data-placement="bottom" data-toggle="tooltip" title="Meu primeiro tooltip">Baixo</button>
+
         </div>
 
         <footer>
             <!-- JS -->
             <script src="public/js/jquery.min.js"></script>
             <script src="public/js/bootstrap.bundle.min.js"></script>
-            <script>
-                $(function () {
-                    $('[data-toggle="popover"]').popover();
+            <script type="text/javascript">
+                $(function(){
+                    $('[data-toggle="tooltip"]').tooltip()
                 });
             </script>
+            
         </footer>
     </body>
 </html>
